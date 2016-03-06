@@ -20,3 +20,6 @@
   version of the book
     - http://alistapart.com/article/building-books-with-css3
 
+* Finalize the Table of Contents (ToC)
+
+* Update README to contain the ToC
