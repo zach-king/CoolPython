@@ -1,9 +1,5 @@
 # To-Do List:
 
-* Switch from MS Word to OmmWriter for
-  composing the plaintext book (styling 
-  for later)
-
 * Port code to Python 3
     - ./source/email_example.py
     - ./source/gmailer.py
