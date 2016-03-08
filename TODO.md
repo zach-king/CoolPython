@@ -1,7 +1,7 @@
 # To-Do List:
 
 - [ ] Port code to Python 3
-    - [ ] ./source/email_example.py
+    - [x] ./source/email_example.py
     - [ ] ./source/gmailer.py
 
 - [ ] Compile/Collect other necessary example

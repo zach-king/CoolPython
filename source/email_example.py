@@ -1,24 +1,22 @@
-# Import smtplib for the actual sending function
 import smtplib
-
-# Import the email modules we'll need
+from getpass import getpass
 from email.mime.text import MIMEText
 
-textfile = "email.txt"
+server = smtplib.SMTP('smtp.gmail.com', 587)
+server.starttls()
+username = input("Enter your email address: ")
+password = getpass(prompt="Enter your password: ")
+server.login(username, password)
 
-# Open a plain text file for reading. For this example, assume that 
-# the text file contains only ASCII characters.
-fp = open(textfile, 'rb')
-# Create a text/plain message
-msg = MIMEText(fp.read())
-fp.close()
+recipient = input("\nEnter Recipient Email Address: ")
+subject = input("Enter Subject: ")
+msg = input("\nEnter message: ")
 
-msg['Subject'] = 'The contents of %s' % textfile
-msg['From'] = "kingzach77@gmail.com"
-msg['To'] = "kingzach77@gmail.com"
+mail = MIMEText(msg)
+mail['Subject'] = subject
+mail['From'] = username
+mail['To'] = recipient
 
-# Send the message via our own SMTP server, but don't include the 
-# envelope header.
-s = smtplib.SMTP('localhost')
-s.sendmail(me, [you], msg.as_string())
-s.quit()
+# Send mail
+server.send_message(mail)
+server.quit()
