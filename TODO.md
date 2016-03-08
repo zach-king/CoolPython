@@ -6,6 +6,7 @@
 
 - [ ] Compile/Collect other necessary example
   scripts
+    - [x] Email Examples
     - [x] Serialization Examples
     - [ ] Cryptgraphy Examples
     - [ ] API Example
