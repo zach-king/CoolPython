@@ -2,10 +2,10 @@
 This repository contains the source code for my work-in-progress--a
 self-published book, titled "Python: Actually Cool Stuff."
 
-For a quick view, check out the Table of Contents at: 
-https://github.com/zach-king/CoolPython/blob/master/book/table-of-contents.pdf
+For a quick view at what this book will have to offer, check out the [Table of
+Contents](https://github.com/zach-king/CoolPython/blob/master/book/table-of-contents.pdf). 
 
-## Brief Summary
+## Brief Overview 
 Are you a programmer and wondering what you can *really* do with your code? Are you tired of writing programs that 
 manipulate numbers and basic strings? Do you want to make something *actually cool* with your skills as a programmer? 
 Well, you're in the right place! 
