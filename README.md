@@ -1,5 +1,6 @@
-# Cool Python
-This repository contains the source code for my work-in-progress, self-published book, "Python: Actually Cool Stuff."
+# Python: Actually Cool Stuff 
+This repository contains the source code for my work-in-progress--a
+self-published book, titled "Python: Actually Cool Stuff."
 
 ## Brief Summary
 Are you a programmer and wondering what you can *really* do with your code? Are you tired of writing programs that 
