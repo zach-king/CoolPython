@@ -6,7 +6,6 @@
 
 * Compile/Collect other necessary example
   scripts
-    - Serialization Example
     - Cryptgraphy Examples
     - API Example
     - cx_freeze Example
@@ -17,9 +16,5 @@
     - Threading Examples
 
 * Work out CSS3 style sheet for the HTML 
-  version of the book
+  version of the book?
     - http://alistapart.com/article/building-books-with-css3
-
-* Finalize the Table of Contents (ToC)
-
-* Update README to contain the ToC
