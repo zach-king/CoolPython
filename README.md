@@ -14,3 +14,7 @@ The goal of this book is to give Python programmers a quick, reference/study for
 beginner/intermediate programmer's find daunting, or would like to do but have no idea *how* to do them. Ultimately, 
 you can think of this as a collection of some of my useful Python scripts and packages, and hopefully you'll find use 
 in their existence and knowledge in learning how they function (haha, a pun). 
+
+Check out the [TODO
+List](https://github.com/zach-king/CoolPython/blob/master/TODO.md) to see
+current plans for the book's development. 
