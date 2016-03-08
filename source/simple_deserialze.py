@@ -1,5 +1,6 @@
+#!/usr/bin/python3
 import pickle
 
-awesome_data = pickle.load(open("awesome_save.sav", "rb"))
-print(awesome_data)
+simple_data = pickle.load(open("simple.sav", "rb"))
+print(simple_data)
 
