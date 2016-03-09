@@ -17,10 +17,6 @@
     - [ ] RegEx Examples
     - [ ] Threading Examples
 
-- [ ] Work out CSS3 style sheet for the HTML 
-  version of the book?
-    - [ ] http://alistapart.com/article/building-books-with-css3
-
 - [x] Switch from MS Office Word to OmmWriter for plaintext drafts
 
 - [ ] Initial Drafts
@@ -35,4 +31,8 @@
     - [ ] Chapter 08: Distribution
     - [ ] Chapter 09: Regular Expressions
     - [ ] Chapter 10: Multithreading
+
+- [ ] Create CSS style sheet for HTML version of book
+
+- [ ] Use iBooks Author to create EBook version
 
