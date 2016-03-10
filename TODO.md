@@ -12,6 +12,7 @@
     - [ ] ./soruce/stock\_scraper.py
     - [ ] ./source/texter.py
     - [ ] ./soruce/ftpClientGUI.pyw
+    - [ ] ./source/xkcd.py
 
 - [ ] Compile/Collect other necessary example
   scripts
