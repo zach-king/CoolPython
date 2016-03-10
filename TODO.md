@@ -1,7 +1,7 @@
 # To-Do List:
 
 - [x] Port code to Python 3
-    - [x] ./source/email_example.py
+    - [x] ./source/email\_example.py
     - [x] ./source/gmailer.py
 
 - [ ] Check compatibility of source code
@@ -9,6 +9,9 @@
     - [ ] ./source/gov-bills-scraper.py
     - [ ] ./source/ftpClient.py
     - [ ] ./source/regextTut.py
+    - [ ] ./soruce/stock\_scraper.py
+    - [ ] ./source/texter.py
+    - [ ] ./soruce/ftpClientGUI.pyw
 
 - [ ] Compile/Collect other necessary example
   scripts
@@ -16,10 +19,10 @@
     - [x] Serialization Examples
     - [ ] Cryptgraphy Examples
     - [ ] API Example
-    - [ ] cx_freeze Example
+    - [ ] cx\_freeze Example
     - [x] Web Scraping Example
     - [ ] Tkinter Text Editor Example
-    - [x] FPT CLI Client
+    - [x] FPT Client
     - [x] RegEx Examples
     - [ ] Threading Examples
 
