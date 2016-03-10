@@ -4,6 +4,12 @@
     - [x] ./source/email_example.py
     - [x] ./source/gmailer.py
 
+- [ ] Check compatibility of source code
+    - [ ] ./source/scrape\*
+    - [ ] ./source/gov-bills-scraper.py
+    - [ ] ./source/ftpClient.py
+    - [ ] ./source/regextTut.py
+
 - [ ] Compile/Collect other necessary example
   scripts
     - [x] Email Examples
@@ -11,10 +17,10 @@
     - [ ] Cryptgraphy Examples
     - [ ] API Example
     - [ ] cx_freeze Example
-    - [ ] Web Scraping Example
+    - [x] Web Scraping Example
     - [ ] Tkinter Text Editor Example
-    - [ ] FPT CLI Client
-    - [ ] RegEx Examples
+    - [x] FPT CLI Client
+    - [x] RegEx Examples
     - [ ] Threading Examples
 
 - [x] Switch from MS Office Word to OmmWriter for plaintext drafts
