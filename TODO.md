@@ -1,6 +1,6 @@
 # To-Do List:
 
-- [x] Port code to Python 3
+- [ ] Port code to Python 3
     - [x] ./source/email\_example.py
     - [x] ./source/gmailer.py
 
@@ -46,5 +46,5 @@
 
 - [ ] Convert from plaintext to markdown (.md) 
     - [x] Chapter 1
-    - [ ] Chapter 2
+    - [x] Chapter 2
 
