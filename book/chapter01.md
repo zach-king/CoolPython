@@ -13,9 +13,9 @@ simple_data = list(range(10))
 pickle.dump(simple_data, open("simple.sav", "wb"))
 ```
 
-First thing's first, we have to import our package containing needed sorcery, pickle. This package comes installed with Python and is awesome for easy serialization/deserialization. Then we generate some simple data that is just a list of the numbers 0-9. Finally, we want to save this object, so we just "dump" it in a file called 'simple.sav.' You typically want to use the "wb" mode on the open function, which means "write binary" so it pickle will write the data as binary. Note: you can call this file whatever you want and give it any extension or none at all; I simply like .sav for my "save" files. 
+First thing's first, we have to import our package containing needed sorcery, *pickle*. This package comes installed with Python and is awesome for easy serialization/deserialization. Then we generate some simple data that is just a list of the numbers 0-9. Finally, we want to save this object, so we just "dump" it in a file called 'simple.sav.' You typically want to use the "wb" mode on the open function, which means "write binary" so it pickle will write the data as binary. Note: you can call this file whatever you want and give it any extension or none at all; I simply like .sav for my "save" files. 
 
-Now you ask, "Okay...but how do I get my data back?" Here comes the deserialization part:
+Now you ask, *"Okay...but how do I get my data back?"* Here comes the deserialization part:
 
 ```python
 # Example 1-2 (simple_deserialize.py):
@@ -24,9 +24,9 @@ simple_data = pickle.load(open("simple.sav", "rb"))
 print(simple_data)
 ```
 
-So the only difference is, now we're "loading" instead of "dumping." This time, the open function will use the "read binary" mode, since we wrote the save file as binary. Thanks to the print() statement at the end, we can verify that our simple data is indeed intact. 
+So the only difference is, now we're "loading" instead of "dumping." This time, the open function will use the "read binary" mode, since we wrote the save file as binary. Thanks to the `print()` statement at the end, we can verify that our simple data is indeed intact. 
 
-*"That's just a list though. What about my super complex class I built? How do I save all of its awesome data?"*
+> "That's just a list though. What about my super complex class I built? How do I save all of its awesome data?"
 
 Have no fear, Python is here. First, we'll need a "complex class" like the following:
 
@@ -64,7 +64,7 @@ print("\nAfter Loading from Pickle: ")
 print(loaded)
 ```
 
-You mean to pickle an instance of my custom class, I simply do the same thing as before? Yep, it's that easy. This example might seem different, but the serialization is the same; you just pass in the instance of your class to pickle.dump() instead of the simple data from Example 1-1. Please note, however, that with very large or nested data, you might need to rethink your storage method (I highly recommend some research on the Python "shelve" package for this).
+You mean to pickle an instance of my custom class, I simply do the same thing as before? Yep, it's that easy. This example might seem different, but the serialization is the same; you just pass in the instance of your class to `pickle.dump()` instead of the simple data from **Example 1-1**. Please note, however, that with very large or nested data, you might need to rethink your storage method (I highly recommend some research on the Python *shelve* package for this).
 
 
 
