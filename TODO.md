@@ -42,7 +42,9 @@
     - [ ] Chapter 09: Regular Expressions
     - [ ] Chapter 10: Multithreading
 
-- [ ] Create CSS style sheet for HTML version of book
+- [ ] Create CSS style sheet for HTML version of book?
 
-- [ ] Use iBooks Author to create EBook version
+- [ ] Convert from plaintext to markdown (.md) 
+    - [x] Chapter 1
+    - [ ] Chapter 2
 
