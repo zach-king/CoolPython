@@ -1,5 +1,5 @@
 # Chapter 1: Serialization
-##Summary:
+## Summary:
 Have you ever cooked anything? I’m betting you have. I’m also betting you’ve had leftovers that you might have frozen or otherwise stored for later. Well, in this chapter, we’re going to discuss how to do the same thing with objects in Python!
 
 As you create projects with more and more complex classes and objects, you’ll eventually find yourself wanting to save the state of the instances you create. In other words, you want to be able to keep the values of their variables and "state" and recreate them with no hassle. That’s where serialization comes in to save the day. I like to think of serialization as freezing food for later—or as you’ll soon see in Python, we’ll call it pickling. When you’re ready to save the food, or object, for later use, you just serialize it and store it away; then later when you want to use it again, you thaw it out--or in our case deserialize it!
@@ -8,7 +8,7 @@ Okay, let's jump right into it then, shall we!
 
 ---
 
-##Content:
+## Content:
 
 ```python
 # Example 1-1 (simple_serialize.py):
