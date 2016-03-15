@@ -1,5 +1,5 @@
 #Table of Contents:
-* Introduction
+* [Introduction](https://github.com/zach-king/CoolPython/blob/master/book/introduction.md)
 * [Chapter  1: Serialization](https://github.com/zach-king/CoolPython/blob/master/book/chapter01.md) 
 * [Chapter  2: Sending Email](https://github.com/zach-king/CoolPython/blob/master/book/chapter02.md) 
 * [Chapter  3: File Encryption](https://github.com/zach-king/CoolPython/blob/master/book/chapter03.md)
