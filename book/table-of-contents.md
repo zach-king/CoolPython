@@ -1,9 +1,9 @@
 #Table of Contents:
 * Introduction
-* Chapter  1: Serialization 
-* Chapter  2: Sending Email 
-* Chapter  3: File Encryption
-* Chapter  4: Web Scraping
+* [Chapter  1: Serialization](https://github.com/zach-king/CoolPython/blob/master/book/chapter01.md) 
+* [Chapter  2: Sending Email](https://github.com/zach-king/CoolPython/blob/master/book/chapter02.md) 
+* [Chapter  3: File Encryption](https://github.com/zach-king/CoolPython/blob/master/book/chapter03.md)
+* [Chapter  4: Web Scraping](https://github.com/zach-king/CoolPython/blob/master/book/chapter04.md)
 * Chapter  5: A GUI Text Editor
 * Chapter  6: APIs
 * Chapter  7: FTP Client
