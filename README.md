@@ -3,7 +3,7 @@ This repository contains the source code for my work-in-progress--a
 self-published book, titled "Python: Actually Cool Stuff."
 
 For a quick view at what this book will have to offer, check out the [Table of
-Contents](https://github.com/zach-king/CoolPython/blob/master/book/table-of-contents.pdf). 
+Contents](https://github.com/zach-king/CoolPython/blob/master/book/table-of-contents.md). 
 
 ## Brief Overview 
 Are you a programmer and wondering what you can *really* do with your code? Are you tired of writing programs that 
