@@ -1,4 +1,5 @@
 # Chapter 3: File Encryption
+
 ## Summary:
 
 ---
