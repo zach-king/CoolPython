@@ -34,8 +34,6 @@
     - [x] RegEx Examples
     - [ ] Threading Examples
 
-- [x] Switch from MS Office Word to OmmWriter for plaintext drafts
-
 - [ ] Initial Drafts
     - [ ] Introduction
     - [x] Chapter 01: Serialization
