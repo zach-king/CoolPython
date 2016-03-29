@@ -4,6 +4,8 @@
     - [x] ./source/email\_example.py
     - [x] ./source/gmailer.py
 
+- [ ] Find alternative package for PyCrypto that supports Python 3
+
 - [ ] Check compatibility of source code
     - [ ] ./source/scrape\*
     - [ ] ./source/gov-bills-scraper.py
@@ -44,7 +46,6 @@
 
 - [ ] Create CSS style sheet for HTML version of book?
 
-- [ ] Convert from plaintext to markdown (.md) 
+- [x] Convert from plaintext to markdown (.md)
     - [x] Chapter 1
     - [x] Chapter 2
-
