@@ -6,6 +6,11 @@
 
 - [ ] Find alternative package for PyCrypto that supports Python 3
 
+- [ ] Illustration
+    - [ ] Cover Photo
+    - [ ] Chapter 01
+    - [ ] Chapter 02
+
 - [ ] Check compatibility of source code
     - [ ] ./source/scrape\*
     - [ ] ./source/gov-bills-scraper.py
