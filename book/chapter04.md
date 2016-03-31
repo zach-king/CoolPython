@@ -25,11 +25,27 @@ used for myriad tasks, such as:
   - Crime statistics
 
 So, in this chapter we'll get to look at the basics of scraping the web using
-a pretty sweet third-party Python package called *BeautifulSoup*. 
+a pretty sweet third-party Python package called *BeautifulSoup*.
 
 ---
 
 ## Content:
+
+Alright, so first we need to install *BeautifulSoup* for Python. The newest
+version, as of the writing of this book, is v4.4.1, which supports both Python 2.6+
+and Python 3. You can install the package with whatever package manager you prefer,
+such as *pip* or *easy_install*, like so:
+
+```
+pip install beautifulsoup4
+```
+
+```
+easy_install beautifulsoup4
+```
+
+Or, if you don't like that method, you can always visit the website for the package
+at [https://www.crummy.com/software/BeautifulSoup/bs4/download/](https://www.crummy.com/software/BeautifulSoup/bs4/download/).
 
 ---
 
