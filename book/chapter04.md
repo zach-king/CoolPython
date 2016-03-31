@@ -47,6 +47,20 @@ easy_install beautifulsoup4
 Or, if you don't like that method, you can always visit the website for the package
 at [https://www.crummy.com/software/BeautifulSoup/bs4/download/](https://www.crummy.com/software/BeautifulSoup/bs4/download/).
 
+To test that you installed the package successfully, you can simply start the
+Python interpreter, and run the following import command:
+
+```python
+from bs4 import BeautifulSoup
+```
+
+If that import command completed without error, you're setup and ready to scrape!
+
+---
+
+Now then, before we actually start using the *bs4* package, let's first take
+a look at the general process of web scraping. 
+
 ---
 
 ## Wrap Up:
