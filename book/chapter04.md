@@ -17,7 +17,6 @@ desires--graphs, charts, tables, etc. manufactured from the data.
 Maybe handling a sea of data seems daunting to you though. Perhaps we could
 study the more common applications of web scraping? Sure! Web scraping can be
 used for myriad tasks, such as:
-
   - Sports statistics
   - Social media trends
   - Online product comparisons
@@ -59,7 +58,11 @@ If that import command completed without error, you're setup and ready to scrape
 ---
 
 Now then, before we actually start using the *bs4* package, let's first take
-a look at the general process of web scraping. 
+a look at the general process of web scraping, as follows:
+  1. Study the format of target webpage
+  2. Retrieve content of webpage (an HTTP request)
+  3. Search the content for specific data based off the content format
+  4. Do stuff with the data found in the search
 
 ---
 
