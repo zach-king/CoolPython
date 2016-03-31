@@ -64,6 +64,23 @@ a look at the general process of web scraping, as follows:
   3. Search the content for specific data based off the content format
   4. Do stuff with the data found in the search
 
+Okay, let's put this into practice. This first example is so simple, we don't
+need to use *bs4*.
+
+```python
+# Example 4-1 (scrape0.py):
+import requests
+page = requests.get('http://github.com/zach-king/')
+print(page.content)
+```
+
+Here, we're using the builtin *requests* package from Python (2 and 3). After
+importing the package, we use the `get()` function to retrieve the HTML document
+that the server sends back for my GitHub profile, at [http://github.com/zach-king](http://github.com/zach-king).
+
+After storing that in a variable called `page` we can print its contents out
+and verify the same HTML is received this way as when we view it in a web browser.
+
 ---
 
 ## Wrap Up:
