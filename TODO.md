@@ -16,6 +16,10 @@
 
 - [ ] Check compatibility of source code
   - [ ] ./source/scrape\*
+    - [x] scrape0.py
+    - [ ] scrape1.py
+    - [ ] scrape2.py
+    - [ ] scrape3.py
   - [ ] ./source/gov-bills-scraper.py
   - [ ] ./source/ftpClient.py
   - [ ] ./source/regextTut.py
