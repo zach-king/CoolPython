@@ -80,6 +80,10 @@ that the server sends back for my GitHub profile, at [http://github.com/zach-kin
 
 After storing that in a variable called `page` we can print its contents out
 and verify the same HTML is received this way as when we view it in a web browser.
+Keep in mind that you can view the source code of a webpage in your browser by
+right clicking and selecting either *inspect element* or *view source* (I recommend
+  using *inspect element* since you can more accurately tell what elements you are
+  looking at).
 
 ---
 
