@@ -28,7 +28,7 @@
   - [ ] ./soruce/ftpClientGUI.pyw
   - [ ] ./source/xkcd.py
 
-- [ ] Create directories for Python 2 & 3 to support compatibility
+- [x] Create directories for Python 2 & 3 to support compatibility
 
 - [ ] Compile/Collect other necessary example
   scripts
