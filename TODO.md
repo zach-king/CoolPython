@@ -28,12 +28,13 @@
   - [ ] ./soruce/ftpClientGUI.pyw
   - [ ] ./source/xkcd.py
 
+- [ ] Create directories for Python 2 & 3 to support compatibility
 
 - [ ] Compile/Collect other necessary example
   scripts
   - [x] Email Examples
   - [x] Serialization Examples
-  - [ ] Cryptgraphy Examples
+  - [x] Cryptgraphy Examples
   - [ ] API Example
   - [ ] cx\_freeze Example
   - [x] Web Scraping Example
