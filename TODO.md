@@ -1,6 +1,7 @@
 # To-Do List:
 
 - [ ] Check compatibility of source code
+  - [x] serialization examples
   - [ ] ./source/scrape\*
     - [x] scrape0.py
     - [ ] scrape1.py
