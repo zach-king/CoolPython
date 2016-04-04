@@ -6,7 +6,7 @@
   - [x] Scraping examples
   - [x] ./source/ftpClient.py
   - [ ] ./source/regextTut.py
-  - [ ] ./source/texter.py
+  - [x] ./source/texter.py
   - [x] ./soruce/ftpClientGUI.pyw
   - [ ] ./source/xkcd.py
   - [x] ./source/crypt\*
