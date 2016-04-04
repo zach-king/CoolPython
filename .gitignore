@@ -1,2 +1,29 @@
-*.pyc
+# Byte-compiled / optimized files
+*.py[cod]
+source/python27/__pycache__/
+source/python34/__pycache__/
 
+# Distribution / packaging
+bin/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info
+.installed.cfg
+*.egg
+
+# Unit test / coverage reports
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
