@@ -2,6 +2,7 @@
 
 - [ ] Check compatibility of source code
   - [x] serialization examples
+  - [x] Email example(s)
   - [ ] ./source/scrape\*
     - [x] scrape0.py
     - [ ] scrape1.py
