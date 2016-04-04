@@ -4,10 +4,10 @@
   - [x] Serialization examples
   - [x] Email example(s)
   - [x] Scraping examples
-  - [ ] ./source/ftpClient.py
+  - [x] ./source/ftpClient.py
   - [ ] ./source/regextTut.py
   - [ ] ./source/texter.py
-  - [ ] ./soruce/ftpClientGUI.pyw
+  - [x] ./soruce/ftpClientGUI.pyw
   - [ ] ./source/xkcd.py
   - [x] ./source/crypt\*
 
