@@ -13,7 +13,7 @@
   - [ ] ./source/texter.py
   - [ ] ./soruce/ftpClientGUI.pyw
   - [ ] ./source/xkcd.py
-  - [ ] ./source/crypt\*
+  - [x] ./source/crypt\*
 
 
 - [ ] Compile/Collect other necessary example

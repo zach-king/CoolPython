@@ -1,8 +1,8 @@
 from Crypto import Random
 from Crypto.Cipher import AES
-import tkinter
-import tkinter.filedialog
-import tkinter.messagebox
+import Tkinter
+import tkFileDialog
+import tkMessageBox
 
 key = b'\xbf\xc0\x85)\x10nc\x94\x02)j\xdf\xcb\xc4\x94\x9d(\x9e[EX\xc8\xd5\xbfI{\xa2$\x05(\xd5\x18'
 key = "D21A90B04A21AD52ED19287023AD9013"
@@ -71,15 +71,15 @@ def decrypt_the_file():
 
 
 
-root = tkinter.Tk()
+root = Tkinter.Tk()
 root.title("Cryptofile")
 root.minsize(width=200, height=200)
 root.maxsize(width=200, height=200)
 
 
-loadButton = tkinter.Button(root, text="Load Text File", command=load_file)
-encryptButton = tkinter.Button(root, text="Encrypt File", command=encrypt_the_file)
-decryptButton = tkinter.Button(root, text="Decrypt File", command=decrypt_the_file)
+loadButton = Tkinter.Button(root, text="Load Text File", command=load_file)
+encryptButton = Tkinter.Button(root, text="Encrypt File", command=encrypt_the_file)
+decryptButton = Tkinter.Button(root, text="Decrypt File", command=decrypt_the_file)
 
 loadButton.pack()
 encryptButton.pack()

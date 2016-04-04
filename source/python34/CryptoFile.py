@@ -45,7 +45,7 @@ def decrypt_file(filename, key):
 
 def load_file():
 	global key, filename
-	text_file = tkFileDialog.askopenfile(filetypes=[('Text Files', 'txt')])
+	text_file = tkinter.filedialog.askopenfile(filetypes=[('Text Files', 'txt')])
 	if text_file.name != None:
 		filename = text_file.name
 

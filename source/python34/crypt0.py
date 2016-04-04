@@ -10,4 +10,4 @@ plaintext = decryption_suite.decrypt(ciphertext)
 
 print('Original: Super secret message. top secret')
 print('Ciphertext: %s' % ciphertext)
-print('Decrypted: %s' % plaintext)
+print('Decrypted: %s' % plaintext.decode())
