@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 
-url = "http://www.thomaswallace.net"
+url = "http://www.github.com/zach-king/CoolPython"
 content = urlopen(url).read()
 print(content)
 

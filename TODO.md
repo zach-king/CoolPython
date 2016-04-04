@@ -1,17 +1,11 @@
 # To-Do List:
 
 - [ ] Check compatibility of source code
-  - [x] serialization examples
+  - [x] Serialization examples
   - [x] Email example(s)
-  - [ ] ./source/scrape\*
-    - [x] scrape0.py
-    - [ ] scrape1.py
-    - [ ] scrape2.py
-    - [ ] scrape3.py
-  - [ ] ./source/gov-bills-scraper.py
+  - [x] Scraping examples
   - [ ] ./source/ftpClient.py
   - [ ] ./source/regextTut.py
-  - [ ] ./soruce/stock\_scraper.py
   - [ ] ./source/texter.py
   - [ ] ./soruce/ftpClientGUI.pyw
   - [ ] ./source/xkcd.py

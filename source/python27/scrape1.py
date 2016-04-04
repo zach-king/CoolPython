@@ -1,10 +1,14 @@
 from bs4 import BeautifulSoup
-from urllib.request import urlopen
+from urllib2 import urlopen
 
 url = "http://www.github.com/zach-king/CoolPython"
 content = urlopen(url).read()
+print(content)
 
 soup = BeautifulSoup(content)
 
-for link in soup.find_all('a'):
-	print(link.get('href'))
+print(soup.prettify())
+print(soup.title)
+print(soup.title.string)
+print(soup.p)
+print(soup.a)
