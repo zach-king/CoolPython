@@ -1,4 +1,6 @@
-# Chapter 3: File Encryption
+# Chapter 3: Cryptography
+
+[Prev: Chapter 2 - Sending Email](./chapter02.md) | [Next: Chapter 4 - Web Scraping](./chapter04.md)
 
 ## Summary:
 
@@ -14,7 +16,7 @@ this chapter will make you look like a genius (but of course you are one...).
 So what we'll go through in this chapter is first some basic study of modern
 encryption (without the nitty gritty details, which we'll leave for cryptographers).  
 Then we'll use a third-party package for Python, known as *PyCrypto*, to write
-a very basic encryption/decryption program to use from the command-line. 
+a very basic encryption/decryption program to use from the command-line.
 
 ---
 
@@ -23,3 +25,5 @@ a very basic encryption/decryption program to use from the command-line.
 ---
 
 ## Wrap Up:
+
+[Prev: Chapter 2 - Sending Email](./chapter02.md) | [Next: Chapter 4 - Web Scraping](./chapter04.md)

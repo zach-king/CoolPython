@@ -1,5 +1,7 @@
 # Chapter 2: Sending Email
 
+[Prev: Chapter 1 - Serialization](./chapter01.md) | [Next: Chapter 3 - Cryptography](./chapter03.md)
+
 ## Summary:
 
 As you've probably guessed after seeing the title of this chapter, we're now going to take a look at how to send emails with Python. If you've ever done any networking before, this process will seem like a walk in the park--which it is, thanks to Python.
@@ -53,3 +55,5 @@ Then, all that's left is to hit send! So we call `send_message()` and `quit()` w
 ## Wrap Up:
 
 There you have it. You can now send emails to your hearts content using Python. Of course, you can delve further into this topic if you like. The best place to start is of course the Python documentation on the *smtplib* package. From there you can learn how to retrieve mail from your inbox, send images and other attachments, etc. I developed a graphical user interface (**gmailer.py**) for this program using *Tkinter* for Python (which we will discuss later), and can be found with the other source code provided with this book.
+
+[Prev: Chapter 1 - Serialization](./chapter01.md) | [Next: Chapter 3 - Cryptography](./chapter03.md)

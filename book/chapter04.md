@@ -1,4 +1,7 @@
 # Chapter 4: Web Scraping
+
+[Prev: Chapter 3 - Cryptography](./chapter03.md) | [Next: Chapter 5 - GUIs](./chapter05.md)
+
 ## Summary:
 
 Big data. Big deal. In this chapter, we're going to take a gander at a subject
@@ -321,3 +324,5 @@ The concept of retrieving data from a webpage is entirely legal of course, but
 just be sure to keep your programs away from proprietary or sensitive information.
 Furthermore, I would like to remind you that I take no responsibility for your
 actions...
+
+[Prev: Chapter 3 - Cryptography](./chapter03.md) | [Next: Chapter 5 - GUIs](./chapter05.md)

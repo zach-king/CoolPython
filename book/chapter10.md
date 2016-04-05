@@ -1,4 +1,7 @@
-# Chapter 10: Multithreading 
+# Chapter 10: Multithreading
+
+[Prev: Chapter 9 - Regular Expressions](./chapter09.md)
+
 ## Summary:
 
 ---
@@ -9,4 +12,4 @@
 
 ## Wrap Up:
 
-
+[Prev: Chapter 9 - Regular Expressions](./chapter09.md)

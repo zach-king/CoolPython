@@ -1,5 +1,7 @@
 # Chapter 1: Serialization
 
+[Prev: Introduction](./introduction.md) | [Next: Chapter 2 - Sending Email](./chapter02.md)
+
 ## Summary:
 
 Have you ever cooked anything? I’m betting you have. I’m also betting you’ve had leftovers that you might have frozen or otherwise stored for later. Well, in this chapter, we’re going to discuss how to do the same thing with objects in Python!
@@ -19,7 +21,7 @@ simple_data = list(range(10))
 pickle.dump(simple_data, open("simple.sav", "wb"))
 ```
 
-First thing's first, we have to import our package containing needed sorcery, *pickle*. This package comes installed with Python and is awesome for easy serialization/deserialization. Then we generate some simple data that is just a list of the numbers 0-9. Finally, we want to save this object, so we just "dump" it in a file called 'simple.sav.' You typically want to use the "wb" mode on the open function, which means "write binary" so it pickle will write the data as binary. Note: you can call this file whatever you want and give it any extension or none at all; I simply like .sav for my "save" files. 
+First thing's first, we have to import our package containing needed sorcery, *pickle*. This package comes installed with Python and is awesome for easy serialization/deserialization. Then we generate some simple data that is just a list of the numbers 0-9. Finally, we want to save this object, so we just "dump" it in a file called 'simple.sav.' You typically want to use the "wb" mode on the open function, which means "write binary" so it pickle will write the data as binary. Note: you can call this file whatever you want and give it any extension or none at all; I simply like .sav for my "save" files.
 
 Now you ask, *"Okay...but how do I get my data back?"* Here comes the deserialization part:
 
@@ -75,4 +77,6 @@ You mean to pickle an instance of my custom class, I simply do the same thing as
 ---
 
 ## Wrap Up:
-So now you know how to "freeze" your objects for later, and then bring them back to life when the time calls! This topic may seem boring at first, but trust me when I say you'll thank me later. An easy application of serialization is a configuration class for say...a text editor you created (totally not going to make one of those later in this book...[hint of sarcasm]). Using serialization, you can save the values of all the settings the user has set for the application, and when they hit "Save Settings" it dumps the pickled data into a save file. Then, whenever the user starts the application up, it checks for a save file and loads the settings from it if it exists.
+So now you know how to "freeze" your objects for later, and then bring them back to life when the time calls! This topic may seem boring at first, but trust me when I say you'll thank me later. An easy application of serialization is a configuration class for say...a text editor you created (totally not going to make one of those later in this book...[hint of sarcasm]). Using serialization, you can save the values of all the settings the user has set for the application, and when they hit "Save Settings" it dumps the pickled data into a save file. Then, whenever the user starts the application up, it checks for a save file and loads the settings from it if it exists.  
+
+[Prev: Introduction](./introduction.md) | [Next: Chapter 2 - Sending Email](./chapter02.md)
