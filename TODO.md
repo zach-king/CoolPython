@@ -5,11 +5,12 @@
   - [x] Email example(s)
   - [x] Scraping examples
   - [x] ./source/ftpClient.py
-  - [ ] ./source/regextTut.py
+  - [x] ./source/regextTut.py
   - [x] ./source/texter.py
   - [x] ./soruce/ftpClientGUI.pyw
   - [ ] ./source/xkcd.py
   - [x] ./source/crypt\*
+  - [x] Threading examples
 
 
 - [ ] Compile/Collect other necessary example
@@ -23,7 +24,7 @@
   - [ ] Tkinter Text Editor Example
   - [x] FPT Client
   - [x] RegEx Examples
-  - [ ] Threading Examples
+  - [x] Threading Examples
 
 
 - [ ] Initial Drafts
