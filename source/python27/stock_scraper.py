@@ -8,12 +8,9 @@ Description: A web scraper that retrieves the
 """
 
 import requests
-import time
 from bs4 import BeautifulSoup
 import numpy as np
 import matplotlib.pyplot as plt
-
-start_time = time.time()
 
 # Variable declarations
 symbols = ["aapl", "goog", "msft", "yhoo", "amzn", "fb", "twtr", "nflx"]
@@ -65,8 +62,6 @@ for i, arrow in enumerate(arrows):
 		rects[i].set_color('r') # stock is going down
 	else:
 		rects[i].set_color('b') # unknown data
-
-print("--- %s seconds ---" % (time.time() - start_time))
 
 # Show the graph
 fig.tight_layout()

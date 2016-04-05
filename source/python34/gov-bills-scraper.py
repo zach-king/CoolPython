@@ -1,8 +1,8 @@
 """
 File: gov-bills-scraper.py
 Author: Zachary King
-Description: A web scraper that retrieves the top 10 
-	viewed bills in Congress currently. Simple prints
+Description: A web scraper that retrieves the top 10
+	viewed bills in Congress currently. Simply prints
 	out their title and bill number.
 """
 
@@ -11,18 +11,11 @@ from bs4 import BeautifulSoup
 
 url = "https://www.congress.gov/resources/display/content/Most-Viewed+Bills"
 r = requests.get(url)
-soup = BeautifulSoup(r.content)
-i = 0
-howmany = 0
-for bill in soup.find_all("td", {"class":"confluenceTd"}):
+soup = BeautifulSoup(r.content, 'html.parser')
+for i, bill in enumerate(soup.find_all("td", {"class":"confluenceTd"})[:30]):
 	try:
 		print(bill.text)
 	except:
 		pass
-	i+=1
-	howmany+=1
-	if i == 3:
+	if (i+1) % 3 == 0:
 		print("\n")
-		i = 0
-	if howmany == 30:
-		break
