@@ -1,6 +1,6 @@
 # Introduction
 
-[Next: Chapter 1 - Serialization](./chapter01.md)
+[Prev: Table of Contents](./table-of-contents.md) | [Next: Chapter 1 - Serialization](./chapter01.md)
 
 ---
 
