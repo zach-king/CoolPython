@@ -1,5 +1,8 @@
 # To-Do List:
 
+- [ ] Put Prev/Next links on each chapter
+
+
 - [ ] Check compatibility of source code
   - [x] Serialization examples
   - [x] Email example(s)
