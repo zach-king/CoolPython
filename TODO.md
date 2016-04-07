@@ -1,16 +1,7 @@
 # To-Do List:
 
-- [ ] Check compatibility of source code
-  - [x] Serialization examples
-  - [x] Email example(s)
-  - [x] Scraping examples
-  - [x] ./source/ftpClient.py
-  - [x] ./source/regextTut.py
-  - [x] ./source/texter.py
-  - [x] ./soruce/ftpClientGUI.pyw
+- [ ] Compatibilize source code (make compatible)
   - [ ] ./source/xkcd.py
-  - [x] ./source/crypt\*
-  - [x] Threading examples
 
 
 - [ ] Compile/Collect other necessary example
@@ -21,7 +12,7 @@
   - [ ] API Example
   - [ ] cx\_freeze Example
   - [x] Web Scraping Example
-  - [ ] Tkinter Text Editor Example
+  - [ ] Tkinter Examples
   - [x] FPT Client
   - [x] RegEx Examples
   - [x] Threading Examples
@@ -49,4 +40,11 @@
   - [ ] Cover Photo
   - [ ] Chapter 01
   - [ ] Chapter 02
+  - [ ] Chapter 03
   - [ ] Chapter 04
+  - [ ] Chapter 05
+  - [ ] Chapter 06
+  - [ ] Chapter 07
+  - [ ] Chapter 08
+  - [ ] Chapter 09
+  - [ ] Chapter 10
