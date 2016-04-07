@@ -6,16 +6,9 @@
 
 - [ ] Compile/Collect other necessary example
   scripts
-  - [x] Email Examples
-  - [x] Serialization Examples
-  - [x] Cryptgraphy Examples
   - [ ] API Example
   - [ ] cx\_freeze Example
-  - [x] Web Scraping Example
   - [ ] Tkinter Examples
-  - [x] FPT Client
-  - [x] RegEx Examples
-  - [x] Threading Examples
 
 
 - [ ] Initial Drafts
