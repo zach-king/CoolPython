@@ -27,6 +27,7 @@
 
 - [ ] Generate HTML version of book
 
+
 - [ ] Link CSS style sheet to HTML version of book
 
 
@@ -42,3 +43,6 @@
   - [ ] Chapter 08
   - [ ] Chapter 09
   - [ ] Chapter 10
+
+
+  - [ ] Research for publishing to Amazon 
