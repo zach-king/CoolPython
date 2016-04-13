@@ -26,6 +26,7 @@
 
 
 - [ ] Generate HTML version of book
+
 - [ ] Link CSS style sheet to HTML version of book
 
 
