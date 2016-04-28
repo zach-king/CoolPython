@@ -44,5 +44,3 @@
   - [ ] Chapter 09
   - [ ] Chapter 10
 
-
-  - [ ] Research for publishing to Amazon 
