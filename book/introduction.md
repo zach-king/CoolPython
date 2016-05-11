@@ -17,6 +17,11 @@ help kick-start your own usage of such topics.
 I also strive to keep the complexity of the code to a minimal. It would be best if
 you already had the fundamentals under your belt, is all.
 
+**Q:** *Who are you, Zach...King?*  
+**A:** Well, briefly, I'm a self-taught programmer and game enthusiast/developer,
+now studying in Computer Science to earn my B.S. For a more detailed look into my
+persona, feel free to check the [About the Author](./about-the-author.md) section.
+
 ---
 
 [Entire Book Source](https://github.com/zach-king/CoolPython)

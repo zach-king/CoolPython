@@ -10,3 +10,4 @@
 * [Chapter  8: Distribution](./chapter08.md)
 * [Chapter  9: Regular Expressions](./chapter09.md)
 * [Chapter 10: Multithreading](./chapter10.md)
+* [About the Author](./about-the-author.md)

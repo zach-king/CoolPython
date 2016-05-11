@@ -23,6 +23,7 @@
   - [ ] Chapter 08: Distribution
   - [ ] Chapter 09: Regular Expressions
   - [ ] Chapter 10: Multithreading
+  - [ ] About the Author
 
 
 - [ ] Generate HTML version of book
@@ -43,4 +44,3 @@
   - [ ] Chapter 08
   - [ ] Chapter 09
   - [ ] Chapter 10
-
