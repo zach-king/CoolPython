@@ -20,7 +20,13 @@ you already had the fundamentals under your belt, is all.
 **Q:** *Who are you, Zach...King?*  
 **A:** Well, briefly, I'm a self-taught programmer and game enthusiast/developer,
 now studying in Computer Science to earn my B.S. For a more detailed look into my
-persona, feel free to check the [About the Author](./about-the-author.md) section.
+persona, feel free to check the [About the Author](./about-the-author.md) section.  
+
+**Q:** *Is this book just another dry pit of jargon that will put me to sleep?*  
+**A:** I'm glad you asked--I would've too--seeing as most computer science related
+books are that way. However, I strive to make this book the exact *opposite* of dry
+(since I myself hate that kind of reading). Besides, if you pay attention,
+you may even find a Monty Python reference!
 
 ---
 
