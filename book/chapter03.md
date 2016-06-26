@@ -24,7 +24,7 @@ a very basic encryption/decryption program to use from the command-line.
 
 Before moving into the meat of this chapter, I'd like to give a brief history
 lecture regarding the origins of cryptography. If you find this boring, or already
-know it all, feel free to skip to the [good stuff](## Content).
+know it all, feel free to skip to the [good stuff](#content).
 
 ## Content
 First, let's cover some basic concepts of cryptography. Cryptography is defined as
