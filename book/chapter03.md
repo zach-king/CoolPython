@@ -24,7 +24,19 @@ a very basic encryption/decryption program to use from the command-line.
 
 Before moving into the meat of this chapter, I'd like to give a brief history
 lecture regarding the origins of cryptography. If you find this boring, or already
-know it all, feel free to skip to the [good stuff](#content).
+know it all, feel free to skip to the [good stuff](#content).  
+
+The true origins of cryptography date way back all the way to the Egyptians. They
+of course used hieroglyphs to communicate, and only the scribes knew these glyphs.
+Later, a more well-known instance of encryption was used by Julius Caesar for private
+communication; this encryption involved shifting the letters in the message by
+a certain number--a *key*--and is known as the *Caesar Cipher*.
+
+It wasn't until World War II that cryptography became extremely mathematical. During
+the war it was used by armies to communicate without the worry of the enemy obtaining
+the information. A very prominent figure of this time is Alan Turing, who cracked
+the infamous Enigma Cipher used by the Germans. Arguably, one might say this is what
+led to The Allies winning the war.
 
 ## Content
 First, let's cover some basic concepts of cryptography. Cryptography is defined as
@@ -33,7 +45,7 @@ how broad the topic truly is. In most instances of cryptography there are two
 primary components: *plaintext* and *ciphertext*. The plaintext is the message,
 or data, in which you wish to keep secret, yet it is just...plain; the message is
 just sitting there waiting for people to read. The ciphertext is the *encrypted*
-version of the plaintext; this is how data is kept secure.
+version of the plaintext; this is how data is kept secure. 
 
 ---
 
