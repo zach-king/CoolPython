@@ -43,9 +43,17 @@ First, let's cover some basic concepts of cryptography. Cryptography is defined 
 "the art of writing or solving codes." Quite a generic definition, but that just shows
 how broad the topic truly is. In most instances of cryptography there are two
 primary components: *plaintext* and *ciphertext*. The plaintext is the message,
-or data, in which you wish to keep secret, yet it is just...plain; the message is
-just sitting there waiting for people to read. The ciphertext is the *encrypted*
-version of the plaintext; this is how data is kept secure. 
+or data, in which you wish to keep secret, yet it is simply...plain; the message is
+just sitting there waiting for people to read. Ciphertext is the *encrypted*
+version of the plaintext; this is how data is kept secure. So how does one's data
+go from plaintext to ciphertext?  
+
+Well, there are a variety of cryptographic methods for this task. Some involve
+shuffling the characters, exchanging characters, and more realistically, manipulating
+the data on a bit level. All of these methods make use of a *key* however. This is
+how the message is *decrypted* back to its original, readable format.
+
+Nowadays, there are two types of encryption: symmetric and asymmetric. 
 
 ---
 
