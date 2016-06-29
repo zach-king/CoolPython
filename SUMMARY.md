@@ -7,4 +7,5 @@
 * [Chapter 3: Cryptography](book/chapter03.md)
 * [Chapter 4: Web Scraping](book/chapter04.md)
 * [Chapter 5: GUIs](book/chapter05.md)
+* Chapter 6: APIs
 
