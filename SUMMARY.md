@@ -9,5 +9,5 @@
 * [Chapter 5: GUIs](book/chapter05.md)
 * [Chapter 6: APIs](book/chapter06.md)
 * [Chapter 7: FTP Client](book/chapter07.md)
-* Chapter 8: Distribution
+* [Chapter 8: Distribution](book/chapter08.md)
 
