@@ -1,7 +1,7 @@
 #Table of Contents:
 * [Introduction](./introduction.md)
-* [Chapter  1: Serialization](.book/chapter01.md)
-* [Chapter  2: Sending Email](.book/chapter02.md)
+* [Chapter  1: Serialization](./chapter01.md)
+* [Chapter  2: Sending Email](./chapter02.md)
 * [Chapter  3: Cryptography](./chapter03.md)
 * [Chapter  4: Web Scraping](./chapter04.md)
 * [Chapter  5: GUIs](./chapter05.md)
