@@ -1,6 +1,6 @@
 # Introduction
 
-[Prev: Table of Contents](./table-of-contents.md) | [Next: Chapter 1 - Serialization](./chapter01.md)
+[Prev: Table of Contents](./SUMMARY.md) | [Next: Chapter 1 - Serialization](./chapter01.md)
 
 Hello, and welcome to *"Python: Actually Cool Stuff"*. There may be a few questions
 on your mind at this moment, concerning this book, and I would like to first
