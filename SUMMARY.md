@@ -8,5 +8,5 @@
 * [Chapter 4: Web Scraping](book/chapter04.md)
 * [Chapter 5: GUIs](book/chapter05.md)
 * [Chapter 6: APIs](book/chapter06.md)
-* Chapter 7: FTP Client
+* [Chapter 7: FTP Client](book/chapter07.md)
 
