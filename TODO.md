@@ -29,6 +29,7 @@
 - [x] Convert to using GitBook (available [here](https://www.gitbook.com/book/zach-king/python-actually-cool-stuff/details))
   - [x] Create a sample PDF version
   - [ ] Create a sample HTML version
+  - [ ] Create a sample EPUB version
 
 
 - [ ] Illustration
