@@ -1,4 +1,3 @@
 {
-	"root": "book/",
-    "structure.summary": "book/SUMMARY.md"
+	"root": "book/"
 }
