@@ -12,6 +12,7 @@
 
 
 - [ ] Initial Drafts
+  - [x] Preface
   - [ ] Introduction
   - [x] Chapter 01: Serialization
   - [x] Chapter 02: Sending Email
@@ -23,13 +24,12 @@
   - [ ] Chapter 08: Distribution
   - [ ] Chapter 09: Regular Expressions
   - [ ] Chapter 10: Multithreading
-  - [ ] About the Author
+  - [x] About the Author
 
 
 - [x] Convert to using GitBook (available [here](https://www.gitbook.com/book/zach-king/python-actually-cool-stuff/details))
-  - [x] Create a sample PDF version
+  - [ ] Create a sample PDF version
   - [ ] Create a sample HTML version
-  - [ ] Create a sample EPUB version
 
 
 - [ ] Illustration
