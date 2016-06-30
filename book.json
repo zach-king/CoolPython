@@ -3,5 +3,7 @@
         "clarity",
         "theme-default"
     ],
-    "pluginsConfig": {}
+    "pluginsConfig": {},
+    "pdf": "styles/pdf.css",
+    "website": "styles/website.css"
 }
