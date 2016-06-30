@@ -55,7 +55,14 @@ how the message is *decrypted* back to its original, readable format.
 
 Nowadays, there are two types of encryption: symmetric and asymmetric. Symmetric algorithms, also known as *secret key*algorithms, use the same key for both encrypting and decrypting data. However, asymmetric  algorithms, also known as *public key*algorithms, use a different key for encrypting and decrypting data. Regardless of the algorithm used though, there is always one or more keys, and this presents some challenges in itself. It is easily arguable to say that the security in cryptography lies not so much in the algorithm of encryption/decryption, but rather the careful handling of key(s). 
 
-So how *should* we handle these keys? First, we should solve the task of management, or storage, of key(s). Keys should be kept very secure, yet still be available to those that need them. This brings us to the second task--distributing the keys. We must be able to securely communicate the key(s) to those that need them. 
+So how *should* we handle these keys? First, we should solve the task of management, or storage, of key(s). Keys should be kept very secure, yet still be available to those that need them. This brings us to the second task--distributing the keys. We must be able to securely communicate the key(s) to those that need them. In order to solve these problems, let us examine symmetric and asymmetric algorithm properties more closely.
+
+### Asymmetric Algorithms
+Again, asymmetric algorithms use a different key for encryption and decryption of data. When a message is sent, the sender uses *their public key*. Then, the receiver uses *their private key*. Don't let the keywords public/private confuse you; here it is better understood as encryption key and decryption key, respectively. 
+
+The primary benefit of asymmetric algorithms is that it does not need to communicate, or distribute, keys at all. The number of keys is effectively twice the number of "subjects" (i.e. people), or *2n*, which tells us the complexity analysis of these algorithms is *O(n)*.
+
+### Symmetric Algorithms
 
 ---
 
