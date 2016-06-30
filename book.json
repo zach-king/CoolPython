@@ -1,7 +1,2 @@
 {
-    "plugins": [
-        "clarity",
-        "theme-default"
-    ],
-    "pluginsConfig": {},
 }
