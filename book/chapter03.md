@@ -20,7 +20,7 @@ a very basic encryption/decryption program to use from the command-line.
 
 ---
 
-## History:
+## History of Cryptography:
 
 Before moving into the meat of this chapter, I'd like to give a brief history
 lecture regarding the origins of cryptography. If you find this boring, or already
@@ -53,7 +53,9 @@ shuffling the characters, exchanging characters, and more realistically, manipul
 the data on a bit level. All of these methods make use of a *key* however. This is
 how the message is *decrypted* back to its original, readable format.
 
-Nowadays, there are two types of encryption: symmetric and asymmetric. 
+Nowadays, there are two types of encryption: symmetric and asymmetric. Symmetric algorithms, also known as *secret key*algorithms, use the same key for both encrypting and decrypting data. However, asymmetric  algorithms, also known as *public key*algorithms, use a different key for encrypting and decrypting data. Regardless of the algorithm used though, there is always one or more keys, and this presents some challenges in itself. It is easily arguable to say that the security in cryptography lies not so much in the algorithm of encryption/decryption, but rather the careful handling of key(s). 
+
+So how *should* we handle these keys? First, we should solve the task of management, or storage, of key(s). Keys should be kept very secure, yet still be available to those that need them. This brings us to the second task--distributing the keys. We must be able to securely communicate the key(s) to those that need them. 
 
 ---
 
