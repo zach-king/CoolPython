@@ -1,12 +1,7 @@
 {
     "plugins": [
-        "theme-official"
-     ],
-     "pluginsConfig": {
-         "fontSettings": {
-             "theme": "sepia", "night" or "white",
-             "family": "serif" or "sans",
-             "size": 1 to 4
-          }
-     }
+        "clarity",
+        "theme-default"
+    ],
+    "pluginsConfig": {}
 }
