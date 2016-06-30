@@ -4,6 +4,4 @@
         "theme-default"
     ],
     "pluginsConfig": {},
-    "pdf": "styles/pdf.css",
-    "website": "styles/website.css"
 }
