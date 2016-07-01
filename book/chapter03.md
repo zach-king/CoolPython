@@ -79,6 +79,11 @@ Block ciphers on the other hand encrypt an entire group, or "block", of plaintex
 
 The advantages of block ciphers are that the information regarding the plaintext is dispersed into multiple ciphertext symbols, and it is nearly impossible to insert symbols without noticing the change in ciphertext. However, block ciphers are typically much slower than stream ciphers and a single erroneous symbol will likely affect the entire block of ciphertext. 
 
+### Code Please?
+Alright, alright, now we can start writing code. I will show two different encryption algorithms, one symmetric and one asymmetric. The symmetric encryption algorithm I will be using is AES (Advanced Encryption Standard). AES is considered one of the most secure encryption algorithms, and it is used by the U.S. government to protect classified data. AES is a block cipher and takes blocks of 128 bits. The key for AES can be either 128, 192, or 256 bits long. Though I'm not going to discuss the details of AES, it does make a interesting study and I suggest so if you would like to learn more. 
+
+The Python package I will use is...(todo)
+
 ---
 
 ## Wrap Up:
