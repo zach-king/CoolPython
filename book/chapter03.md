@@ -14,9 +14,11 @@ cipher behind it. But fear not, for nothing is so challenging with Python--serio
 this chapter will make you look like a genius (but of course you are one...).
 
 So what we'll go through in this chapter is first some basic study of modern
-encryption (without the nitty gritty details, which we'll leave for cryptographers).  
+encryption (without *all* the nitty gritty details, which we'll leave for cryptographers).  
 Then we'll use a third-party package for Python, known as *PyCrypto*, to write
-a very basic encryption/decryption program to use from the command-line.
+a very basic encryption/decryption program to use from the command-line.  
+
+Please bare in mind that cryptography isn't a menial topic and so before we can start writing our glorious cyber security code, we must first examine the subject itself. That doesn't mean I'm going to describe verbatim the bit-level in's and out's of AES (American Encryption Standard) or similar discussions (though I'm sure you'd be totally interested in all that). 
 
 ---
 
@@ -53,7 +55,7 @@ shuffling the characters, exchanging characters, and more realistically, manipul
 the data on a bit level. All of these methods make use of a *key* however. This is
 how the message is *decrypted* back to its original, readable format.
 
-Nowadays, there are two types of encryption: symmetric and asymmetric. Symmetric algorithms, also known as *secret key*algorithms, use the same key for both encrypting and decrypting data. However, asymmetric  algorithms, also known as *public key*algorithms, use a different key for encrypting and decrypting data. Regardless of the algorithm used though, there is always one or more keys, and this presents some challenges in itself. It is easily arguable to say that the security in cryptography lies not so much in the algorithm of encryption/decryption, but rather the careful handling of key(s). 
+Nowadays, there are two types of encryption: symmetric and asymmetric. Symmetric algorithms, also known as *secret key* algorithms, use the same key for both encrypting and decrypting data. However, asymmetric  algorithms, also known as *public key* algorithms, use a different key for encrypting and decrypting data. Regardless of the algorithm used though, there is always one or more keys, and this presents some challenges in itself. It is easily arguable to say that the security in cryptography lies not so much in the algorithm of encryption/decryption, but rather the careful handling of key(s). 
 
 So how *should* we handle these keys? First, we should solve the task of management, or storage, of key(s). Keys should be kept very secure, yet still be available to those that need them. This brings us to the second task--distributing the keys. We must be able to securely communicate the key(s) to those that need them. In order to solve these problems, let us examine symmetric and asymmetric algorithm properties more closely.
 
@@ -63,6 +65,13 @@ Again, asymmetric algorithms use a different key for encryption and decryption o
 The primary benefit of asymmetric algorithms is that it does not need to communicate, or distribute, keys at all. The number of keys is effectively twice the number of "subjects" (i.e. people), or *2n*, which tells us the complexity analysis of these algorithms is *O(n)*.
 
 ### Symmetric Algorithms
+Symmetric, or *secret key* algorithms use the same key for both encryption and decryption. Typically, these keys are randomly generated *n*-bit strings, and key sizes are not necessarily related to the security of the encryption. 
+
+This algorithm requires that the key be shared between a pair of users; or with several users, each pair of users shares one key. Please note that the keys in asymmetric algorithms and symmetric algorithms are not directly comparable.  
+
+### Stream Ciphers
+
+### Block Ciphers
 
 ---
 
