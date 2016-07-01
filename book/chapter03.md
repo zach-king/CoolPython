@@ -18,7 +18,7 @@ encryption (without *all* the nitty gritty details, which we'll leave for crypto
 Then we'll use a third-party package for Python, known as *PyCrypto*, to write
 a very basic encryption/decryption program to use from the command-line.  
 
-Please bare in mind that cryptography isn't a menial topic and so before we can start writing our glorious cyber security code, we must first examine the subject itself. That doesn't mean I'm going to describe verbatim the bit-level in's and out's of AES (American Encryption Standard) or similar discussions (though I'm sure you'd be totally interested in all that). 
+Please bare in mind that cryptography isn't a menial topic and so before we can start writing our glorious cyber security code, we must first examine the subject itself. That doesn't mean I'm going to describe verbatim the bit-level in's and out's of AES (Advanced Encryption Standard) or similar discussions (though I'm sure you'd be totally interested in all that). 
 
 ---
 
@@ -70,8 +70,14 @@ Symmetric, or *secret key* algorithms use the same key for both encryption and d
 This algorithm requires that the key be shared between a pair of users; or with several users, each pair of users shares one key. Please note that the keys in asymmetric algorithms and symmetric algorithms are not directly comparable.  
 
 ### Stream Ciphers
+Next, we should take a look at the two types of ciphers, stream and block ciphers. First let's discuss stream ciphers. Stream ciphers take one symbol at a time and convert them into a ciphertext symbol. The Caesar Cipher is an example of a stream cipher because each character is translated to another. 
+
+The advantages of stream ciphers are the speed and reliability. These ciphers are linear in time, or *O(n)*, and if an error occurs, it only occurs for that symbol. However, stream ciphers convey all of the information of the plaintext symbol in the ciphertext symbol, which usually makes them less secure. 
 
 ### Block Ciphers
+Block ciphers on the other hand encrypt an entire group, or "block", of plaintext at a time. An example of block cipher is the simple transposition cipher in which the symbols are divided into blocks according to the given key, placed in a grid format with each block being a row, and then outputted by column. Most modern symmetric encryption algorithms use the block cipher. 
+
+The advantages of block ciphers are that the information regarding the plaintext is dispersed into multiple ciphertext symbols, and it is nearly impossible to insert symbols without noticing the change in ciphertext. However, block ciphers are typically much slower than stream ciphers and a single erroneous symbol will likely affect the entire block of ciphertext. 
 
 ---
 
