@@ -82,15 +82,33 @@ The advantages of block ciphers are that the information regarding the plaintext
 ### Code Please?
 Alright, alright, now we can start writing code. I will show two different encryption algorithms, one symmetric and one asymmetric. The symmetric encryption algorithm I will be using is AES (Advanced Encryption Standard). AES is considered one of the most secure encryption algorithms, and it is used by the U.S. government to protect classified data. AES is a block cipher and takes blocks of 128 bits, or . The key for AES can be either 128, 192, or 256 bits long. Though I'm not going to discuss the details of AES, it does make for an interesting study and I suggest you look into it if you would like to learn more. 
 
-The Python library I will use is *PyCrypto*. To install PyCrypto, you can use either *pip* or *easy_install*. Just open your terminal of choice and use the appropriate command:  
+The Python library I will use is *PyCrypto*. To install PyCrypto, you can use a package manager such as *pip* or *easy_install*. Just open your terminal of choice and use the appropriate command:  
 ```
 pip install PyCrypto
 ```
-or
 ```
 easy_install PyCrypto
 ```
 
+The PyCrypto package offers a healthy amount of cryptographic tools, as well as a better *Random* module than Python's built-in *random*. Let's take a look at a very simple example taken from the PyCrypto documentation on the Python Package Index page:  
+
+```python
+from Crypto.Cipher import AES
+
+obj = AES.new('This is a key123', AES.MODE_CBC, 'This is an IV456')
+message = 'The answer is no'
+ciphertext = obj.encrypt(message)
+print(ciphertext)
+obj2 = AES.new('This is a key123', AES.MODE_CBC, 'This is an IV456')
+decrypted = obj2.decrypt(ciphertext)
+print(decrypted)
+```
+
+Which, when run, yields the following output:
+```
+\xd6\x83\x8dd!VT\x92\xaa`A\x05\xe0\x9b\x8b\xf1
+The answer is no
+```
 
 ---
 
