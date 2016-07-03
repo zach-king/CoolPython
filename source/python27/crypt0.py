@@ -1,13 +1,12 @@
 from Crypto.Cipher import AES
 
-# Encryption
-encryption_suite = AES.new('key of length 16', AES.MODE_CBC, 'iv of length 16.')
-ciphertext = encryption_suite.encrypt("Super secret message. top secret")
+# Subject 1 encrypting a message
+obj = AES.new('This is a key123', AES.MODE_CBC, 'This is an IV456')
+message = 'The answer is no'
+ciphertext = obj.encrypt(message)
+print(ciphertext)
 
-# Decryption
-decryption_suite = AES.new('key of length 16', AES.MODE_CBC, 'iv of length 16.')
-plaintext = decryption_suite.decrypt(ciphertext)
-
-print('Original: Super secret message. top secret')
-print('Ciphertext: %s' % ciphertext)
-print('Decrypted: %s' % plaintext)
+# Subject 2 decrypting the ciphertext
+obj2 = AES.new('This is a key123', AES.MODE_CBC, 'This is an IV456')
+decrypted = obj2.decrypt(ciphertext)
+print(decrypted)
