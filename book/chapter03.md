@@ -110,6 +110,17 @@ Which, when run, yields the following output:
 The answer is no
 ```
 
+Now let's "decipher" the meaning of this code. After importing the appropriate submodule from PyCrypto (import name is actually *Crypto*), we first need to create a cipher object. This object, an instance of the *AES* class in *Crypto.Cipher*, is used to encrypt and decrypt. 
+
+The constructor of this class takes a few arguments. The first is the key as a string, and the other two are special. *AES.MODE_CBC* tells the cipher object to use the Cipher Block Chaining mode; block ciphers use modes such as these. If you read about CBC, you will see that "[I]n CBC, each block of plaintext is XORed with the previous ciphertext block before being encrypted" ([source](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_Block_Chaining_.28CBC.29)). The last argument is a string, known as the IV. IV stands for initialization vector. The IV should be random, or pseudorandom, and its usage for block ciphers depends on the mode. In our case, using CBC mode, the IV modifies how the first block is encrypted/decrypted; furthermore, a one-bit change of the IV will result in different results. The following image, obtained from the [wiki page for block ciphers](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_Block_Chaining_.28CBC.29), depicts the process for encryption using CBC. 
+
+![CBC mode encryption](https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/CBC_encryption.svg/601px-CBC_encryption.svg.png)
+
+
+Next, we store our message as a string, and pass it to the *encrypt()* method in the cipher object instance. The result of this is a string of bytes, which we store in the *ciphertext* variable. The code up to this point can be thought of as the "sender" code, and the code afterwards as the "receiver."  
+
+On the receiving end, the cipher object must be created first and foremost, in the same manner as the sender. Then, we use the *decrypt()* method of the cipher object and store the returned plaintext. Easy peasy lemon squeezy, right!
+
 ---
 
 ## Wrap Up:
