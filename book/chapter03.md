@@ -82,7 +82,15 @@ The advantages of block ciphers are that the information regarding the plaintext
 ### Code Please?
 Alright, alright, now we can start writing code. I will show two different encryption algorithms, one symmetric and one asymmetric. The symmetric encryption algorithm I will be using is AES (Advanced Encryption Standard). AES is considered one of the most secure encryption algorithms, and it is used by the U.S. government to protect classified data. AES is a block cipher and takes blocks of 128 bits, or . The key for AES can be either 128, 192, or 256 bits long. Though I'm not going to discuss the details of AES, it does make for an interesting study and I suggest you look into it if you would like to learn more. 
 
-The Python library I will use is *PyCrypto*. 
+The Python library I will use is *PyCrypto*. To install PyCrypto, you can use either *pip* or *easy_install*. Just open your terminal of choice and use the appropriate command:  
+```
+pip install PyCrypto
+```
+or
+```
+easy_install PyCrypto
+```
+
 
 ---
 
