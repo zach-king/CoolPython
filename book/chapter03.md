@@ -93,6 +93,7 @@ easy_install PyCrypto
 The PyCrypto package offers a healthy amount of cryptographic tools, as well as a better *Random* module than Python's built-in *random*. Let's take a look at a very simple example taken from the PyCrypto documentation on the Python Package Index page:  
 
 ```python
+# Example 3-1 (crypt0.py)
 from Crypto.Cipher import AES
 
 obj = AES.new('This is a key123', AES.MODE_CBC, 'This is an IV456')
@@ -130,7 +131,7 @@ The next step is integrating this with a useful application. So let's write a fi
 After laying out these requirements, I wrote the following application:
 
 ```python
-
+# Example 3-2 (crypt1.py)
 ```
 
 ---
