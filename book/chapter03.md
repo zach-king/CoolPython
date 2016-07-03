@@ -121,6 +121,18 @@ Next, we store our message as a string, and pass it to the *encrypt()* method in
 
 On the receiving end, the cipher object must be created first and foremost, in the same manner as the sender. Then, we use the *decrypt()* method of the cipher object and store the returned plaintext. Easy peasy lemon squeezy, right!
 
+The next step is integrating this with a useful application. So let's write a file encryption program! Before jumping into our favorite text editor (Atom of course), we should determine the goal of the application. Basically, I want the application to:
+* get a file path from the user, for the plaintext input
+* get a file path from the user, for the ciphertext output
+* get the key from the user
+* use optional command-line arguments 
+
+After laying out these requirements, I wrote the following application:
+
+```python
+
+```
+
 ---
 
 ## Wrap Up:
