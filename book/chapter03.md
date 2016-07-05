@@ -134,7 +134,6 @@ After laying out these requirements, I wrote the following application:
 # Example 3-2 (crypt1.py)
 
 ```
-
 ---
 
 ## Wrap Up:
