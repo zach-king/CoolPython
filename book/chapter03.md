@@ -132,6 +132,7 @@ After laying out these requirements, I wrote the following application:
 
 ```python
 # Example 3-2 (crypt1.py)
+
 ```
 
 ---
