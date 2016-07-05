@@ -1,9 +1,9 @@
 {
   "pluginsConfig": {
     "fontSettings": {
-      "theme": "sepia", // sepia, night, or white
-      "family": "serif", // serif or sans
-      "size": 2 // 1 - 4
+      "theme": "sepia", 
+      "family": "serif",
+      "size": 2 
     }
   }
 }
