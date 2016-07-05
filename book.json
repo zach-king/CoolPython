@@ -2,8 +2,7 @@
   "pluginsConfig": {
     "fontSettings": {
       "theme": "sepia", 
-      "family": "serif",
-      "size": 2 
+      "family": "serif"
     }
   }
 }
