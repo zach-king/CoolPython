@@ -1,33 +1,83 @@
 from Crypto import Random
 from Crypto.Cipher import AES
-import hashlib
+import base64, hashlib
+import sys
 
-def get_hash(msg):
-    # Create hash, using msg converted to bytes
-    return hashlib.md5(msg).hexdigest()
+class AESCipher(object):
+    def __init__(self, key):
+        # Store SHA-256 digest of key
+        self.key = hashlib.sha256(key.encode('utf-8')).digest()
+        self.bs = 32
 
-def pad(s):
-    s = s + b'\0' * (AES.block_size - len(s) % AES.block_size)
-    return s
+    def _pad(self, s):
+        area_to_pad = self.bs - len(s) % self.bs
+        padding = area_to_pad * chr(area_to_pad)
+        return s.decode('utf-8') + padding
 
-def encrypt(message, key):
-    message = pad(message)
-    iv = Random.new().read(AES.block_size)
-    cipher = AES.new(key, AES.MODE_CBC, iv)
-    return iv + cipher.encrypt(message)
+    def _unpad(self, s):
+        return s[:-ord(s[len(s) - 1:])]
+
+    def encrypt(self, data):
+        data = self._pad(data)
+        iv = Random.new().read(AES.block_size)
+        cipher = AES.new(self.key, AES.MODE_CBC, iv)
+        return base64.b64encode(iv + cipher.encrypt(data))
+
+    def decrypt(self, ciphertext):
+        ciphertext = base64.b64decode(ciphertext)
+        iv = ciphertext[:AES.block_size]
+        cipher = AES.new(self.key, AES.MODE_CBC, iv)
+        return self._unpad(cipher.decrypt(ciphertext[AES.block_size:]))
 
 
-def decrypt(ciphertext, key):
-	iv = ciphertext[:AES.block_size]
-	cipher = AES.new(key, AES.MODE_CBC, iv)
-	plaintext = cipher.decrypt(ciphertext[AES.block_size:])
-	return plaintext.rstrip(b'\0').decode()
+def main(in_file, out_file, mode, key):
+    # Create the Cipher
+    cipher = AESCipher(key)
+    data = None
+    transformed = None
+
+    # Store the data from input file
+    with open(in_file, 'rb') as f:
+        data = f.read()
+
+    # Should encrypt or decrypt?
+    if mode == 1:
+        transformed = cipher.encrypt(data)
+    else:
+        transformed = cipher.decrypt(data)
+
+    # Output the encrypted/decrypted data to out_file
+    with open(out_file, 'wb') as f:
+        f.write(transformed)
+
+    msg = ''
+    if mode:
+        msg += 'Encrypted '
+    else:
+        msg += 'Decrypted '
+
+    print(msg + 'contents of ' + in_file + ' to ' + out_file)
+
+
 
 if __name__ == '__main__':
-    plaintext = raw_input('Enter message to encrypt: ')
-    key = raw_input('Enter key: ')
-    hsh = get_hash(key)
-    ciphertext = encrypt(plaintext, hsh)
-    decrypted = decrypt(ciphertext, hsh)
-    print('Ciphertext: %s' % ciphertext)
-    print('Decrypted: %s' % decrypted)
+    if len(sys.argv) == 5:
+        main(sys.argv[1], sys.argv[2], int(sys.argv[3]), sys.argv[4])
+    elif len(sys.argv) == 4:
+        key = raw_input('Enter a key: ')
+        main(sys.argv[1], sys.argv[2], int(sys.argv[3]), key)
+    elif len(sys.argv) == 3:
+        mode = input('Encrypt(1) or Decrypt(0): ')
+        key = raw_input('Enter a key: ')
+        main(sys.argv[1], sys.argv[2], mode, key)
+    elif len(sys.argv) == 2:
+        out_file = raw_input('Output filename: ')
+        mode = input('Encrypt(1) or Decrypt(0): ')
+        key = raw_input('Enter a key: ')
+        main(sys.argv[1], out_file, mode, key)
+    else:
+        in_file = raw_input('Input filename: ')
+        out_file = raw_input('Output filename: ')
+        mode = input('Encrypt(1) or Decrypt(0): ')
+        key = raw_input('Enter a key: ')
+        main(in_file, out_file, mode, key)
