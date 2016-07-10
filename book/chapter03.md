@@ -80,10 +80,60 @@ Block ciphers on the other hand encrypt an entire group, or "block", of plaintex
 The advantages of block ciphers are that the information regarding the plaintext is dispersed into multiple ciphertext symbols, and it is nearly impossible to insert symbols without noticing the change in ciphertext. However, block ciphers are typically much slower than stream ciphers and a single erroneous symbol will likely affect the entire block of ciphertext. 
 
 ### Code Please?
-Alright, alright, now we can start writing code. I will show two different encryption algorithms, one symmetric and one asymmetric. The symmetric encryption algorithm I will be using is AES (Advanced Encryption Standard). AES is considered one of the most secure encryption algorithms, and it is used by the U.S. government to protect classified data. AES is a block cipher and takes blocks of 128 bits. The key for AES can be either 128, 192, or 256 bits long. Though I'm not going to discuss the details of AES, it does make for an interesting study and I suggest so if you would like to learn more. 
+Alright, alright, now we can start writing code. I will show two different encryption algorithms, one symmetric and one asymmetric. The symmetric encryption algorithm I will be using is AES (Advanced Encryption Standard). AES is considered one of the most secure encryption algorithms, and it is used by the U.S. government to protect classified data. AES is a block cipher and takes blocks of 128 bits, or . The key for AES can be either 128, 192, or 256 bits long. Though I'm not going to discuss the details of AES, it does make for an interesting study and I suggest you look into it if you would like to learn more. 
 
-The Python package I will use is...(todo)
+The Python library I will use is *PyCrypto*. To install PyCrypto, you can use a package manager such as *pip* or *easy_install*. Just open your terminal of choice and use the appropriate command:  
+```
+pip install PyCrypto
+```
+```
+easy_install PyCrypto
+```
 
+The PyCrypto package offers a healthy amount of cryptographic tools, as well as a better *Random* module than Python's built-in *random*. Let's take a look at a very simple example taken from the PyCrypto documentation on the Python Package Index page:  
+
+```python
+# Example 3-1 (crypt0.py)
+from Crypto.Cipher import AES
+
+obj = AES.new('This is a key123', AES.MODE_CBC, 'This is an IV456')
+message = 'The answer is no'
+ciphertext = obj.encrypt(message)
+print(ciphertext)
+obj2 = AES.new('This is a key123', AES.MODE_CBC, 'This is an IV456')
+decrypted = obj2.decrypt(ciphertext)
+print(decrypted)
+```
+
+Which, when run, yields the following output:
+```
+\xd6\x83\x8dd!VT\x92\xaa`A\x05\xe0\x9b\x8b\xf1
+The answer is no
+```
+
+Now let's "decipher" the meaning of this code. After importing the appropriate submodule from PyCrypto (import name is actually *Crypto*), we first need to create a cipher object. This object, an instance of the *AES* class in *Crypto.Cipher*, is used to encrypt and decrypt. 
+
+The constructor of this class takes a few arguments. The first is the key as a string, and the other two are special. *AES.MODE_CBC* tells the cipher object to use the Cipher Block Chaining mode; block ciphers use modes such as these. If you read about CBC, you will see that "[I]n CBC, each block of plaintext is XORed with the previous ciphertext block before being encrypted" ([source](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_Block_Chaining_.28CBC.29)). The last argument is a string, known as the IV. IV stands for initialization vector. The IV should be random, or pseudorandom, and its usage for block ciphers depends on the mode. In our case, using CBC mode, the IV modifies how the first block is encrypted/decrypted; furthermore, a one-bit change of the IV will result in different results. The following image, obtained from the [wiki page for block ciphers](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_Block_Chaining_.28CBC.29), depicts the process for encryption using CBC. 
+
+![CBC mode encryption](https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/CBC_encryption.svg/601px-CBC_encryption.svg.png)
+
+
+Next, we store our message as a string, and pass it to the *encrypt()* method in the cipher object instance. The result of this is a string of bytes, which we store in the *ciphertext* variable. The code up to this point can be thought of as the "sender" code, and the code afterwards as the "receiver."  
+
+On the receiving end, the cipher object must be created first and foremost, in the same manner as the sender. Then, we use the *decrypt()* method of the cipher object and store the returned plaintext. Easy peasy lemon squeezy, right!
+
+The next step is integrating this with a useful application. So let's write a file encryption program! Before jumping into our favorite text editor (Atom of course), we should determine the goal of the application. Basically, I want the application to:
+* get a file path from the user, for the plaintext input
+* get a file path from the user, for the ciphertext output
+* get the key from the user
+* use optional command-line arguments 
+
+After laying out these requirements, I wrote the following application:
+
+```python
+# Example 3-2 (crypt1.py)
+
+```
 ---
 
 ## Wrap Up:

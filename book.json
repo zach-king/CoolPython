@@ -1,2 +1,8 @@
 {
+  "pluginsConfig": {
+    "fontSettings": {
+      "theme": "sepia", 
+      "family": "serif"
+    }
+  }
 }

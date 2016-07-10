@@ -21,7 +21,7 @@ simple_data = list(range(10))
 pickle.dump(simple_data, open("simple.sav", "wb"))
 ```
 
-First thing's first, we have to import our package containing needed sorcery, *pickle*. This package comes installed with Python and is awesome for easy serialization/deserialization. Then we generate some simple data that is just a list of the numbers 0-9. Finally, we want to save this object, so we just "dump" it in a file called 'simple.sav.' You typically want to use the "wb" mode on the open function, which means "write binary" so it pickle will write the data as binary. Note: you can call this file whatever you want and give it any extension or none at all; I simply like .sav for my "save" files.
+First thing's first, we have to import our package containing needed sorcery, *pickle*. This package comes installed with Python and is awesome for easy serialization/deserialization. Then we generate some simple data that is just a list of the numbers 0-9. Finally, we want to save this object, so we just "dump" it in a file called 'simple.sav.' You typically want to use the "wb" mode on the open function, which means "write binary" so that pickle will write the data as binary, or bytes. Note: you can call this file whatever you want and give it any extension--or none at all; I simply like *.sav* for my "save" files.
 
 Now you ask, *"Okay...but how do I get my data back?"* Here comes the deserialization part:
 
