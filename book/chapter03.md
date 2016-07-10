@@ -138,10 +138,8 @@ import base64, hashlib
 import sys
 
 
+# A helper class for AES encryption/decryption
 class AESCipher(object):
-'''
-A helper class for AES encryption/decryption
-'''
     def __init__(self, key):
         # Store SHA-256 digest of key
         self.key = hashlib.sha256(key.encode('utf-8')).digest()
@@ -199,6 +197,8 @@ def main(in_file, out_file, mode, key):
 
 
 if __name__ == '__main__':
+    # Parse and use any command-line arguments
+    # sys.argv[0] is the name of the file (crypt1.py) and always present
     if len(sys.argv) == 5:
         main(sys.argv[1], sys.argv[2], int(sys.argv[3]), sys.argv[4])
     elif len(sys.argv) == 4:
