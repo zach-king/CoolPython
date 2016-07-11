@@ -226,7 +226,12 @@ While this code might appear a bit daunting, it's really just an extension of th
 
 The *AESCipher* class is initialized with a key, which gets transformed into a SHA-256 digest. The class automatically generates a IV. We want to be able to encrypt data of any size though, not just the block size, since AES is a block cipher; for this reason, we need to *pad* the data. The *_pad()* fills the remaining space to meet the block size, with a calculated value. Since the padding character is calculated, the inverse method, *_unpad()*, can strip the necessary amount of padding characters away, based off of just one of them. This padding/unpadding allows the data to meet the block size requirement regardless of the actual data length. The rest of the class's code is fairly straightforward. 
 
-Next, the *main()* function takes the needed arguments for 
+Next, the *main()* function takes the needed arguments for encrypting or decrypting the contents of a input file and writing the results to a output file. The *if* clause at the end checks if the script was run, not imported, and if so it uses any command-line arguments given and passes the arguments to *main()*.
+
+You can test this program in a variety of ways, thanks to the acceptance of command-line arguments. Here's one example, which passes all the arguments (input file, output file, mode, key):
+```
+python crypt1.py secret.txt secret.enc 1 shrubbery
+```
 
 ---
 
