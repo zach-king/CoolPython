@@ -254,13 +254,13 @@ into this ciphertext \(_secret.enc_\):
 1n5wILYmZvgmrl0PCCYAAsGBV31Q4ZVhpC16zdAaqu5OP/D3uLY+NXA29qpTTzzN
 ```
 
-Unfortunately, I won't demonstrate other algorithms here. If you are interested in cryptography and would like to delve further, I would recommend looking into PGP \(Pretty Good Privacy\). PGP is another symmetric algorithm, invented by Phil Zimmerman in 1991; the story around PGP and Zimmerman is very intriguing. To give you an idea of the story around the algorithm, PGP is rumored to be unbreakable even by the government...
+Unfortunately, I won't demonstrate other algorithms here. If you are interested in cryptography and would like to delve further, I would recommend looking into PGP \(Pretty Good Privacy\). PGP is another symmetric algorithm, invented by Phil Zimmerman in 1991; the story around PGP and Zimmerman is very intriguing. To give you an idea of the story around the algorithm, PGP is considered to be unbreakable and the closest you'll get to military-grade encryption...
 
 ---
 
 ## Wrap Up:
 
-Okay cyber ninjas, now you can wield the power of cryptography in your own projects! Cyber security is a vast and brilliant topic to study, and Python has a lot to offer for exploring it. You should always keep security and privacy in mind when developing applications that handle user data. I will also suggest considering what ethical concerns your project or application might raise and how you should approach them. 
+Okay cyber ninjas, now you can wield the power of cryptography in your own projects! Cyber security is a vast and brilliant topic to study, and Python has a lot to offer for exploring it. You should always keep security and privacy in mind when developing applications that handle user data. I will also suggest considering what ethical concerns your project or application might raise and how you should approach them.
 
 Things to remember from this chapter are the two types of cryptography algorithms: symmetric and asymmetric, which translates to using one key or two keys, respectively. Also remember there are two types of ciphers: block and stream ciphers, which accept data in different forms \(chunks or symbol-by-symbol\).
 
