@@ -16,7 +16,7 @@
   - [ ] Introduction
   - [x] Chapter 01: Serialization
   - [x] Chapter 02: Sending Email
-  - [ ] Chapter 03: File Encryption
+  - [x] Chapter 03: File Encryption
   - [x] Chapter 04: Web Scraping
   - [ ] Chapter 05: A GUI Text Editor
   - [ ] Chapter 06: APIs
