@@ -13,7 +13,7 @@
 
 * \[ \] Initial Drafts
   * \[x\] Preface
-  * \[ \] Introduction
+  * \[x\] Introduction
   * \[x\] Chapter 01: Serialization
   * \[x\] Chapter 02: Sending Email
   * \[x\] Chapter 03: File Encryption
