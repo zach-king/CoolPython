@@ -6,7 +6,7 @@
 
 * \[ \] Compile\/Collect other necessary example
   scripts
-  * \[ \] API Example
+  * \[ \] API Examples
   * \[ \] cx\_freeze Example
   * \[ \] Tkinter Examples
 
