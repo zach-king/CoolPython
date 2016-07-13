@@ -1,26 +1,14 @@
 """
-File: mumbojumbo.py
+File: cryptopress.py
 Author: Zachary King
-Description: As the name suggests, this program
+Description: Cryptopress translates to 'cryptography compression.'
+    As the name suggests, this program
     takes an arbitrary number of files as input and
-    produces a single stream of 'mumbo jumbo', which
+    produces a single stream of ciphertext, which
     is the AES encrypted content. Optionally, you can
-    output the 'mumbo jumbo' to a file. Then you can
+    output the ciphertext to a file--an archive. Then you can
     use this program to do the inverse action and
-    produce the original files from the mumbo jumbo file.
-
-Usage:
-    To produce mumbo jumbo:
-    python mumbojumbo.py <file1> <file2> ...
-
-    To produce mumbo jumbo and store in a file use -o:
-    python mumbojumbo.py <file1> <file2> ...  -o <output_file>
-
-    To delete orginal files after storing in a file use -d:
-    python mumbojumbo.py <file1> <file2> ...  -o <output_file> -d
-
-    To restore original files from mumbo jumbo file use -i:
-    python mumbojumbo.py -i <mumbojumbo_file>
+    produce the original file(s) from the archive file.
 """
 
 from Crypto import Random
@@ -30,6 +18,10 @@ import sys, os
 import argparse
 
 class AESCipher(object):
+    """
+    Encrypt and decrypt data with the AES cipher. Uses SHA-256 digests for keys.
+    """
+
     def __init__(self, key):
         # Store SHA-256 digest of key
         self.key = hashlib.sha256(key.encode('utf-8')).digest()
@@ -57,24 +49,16 @@ class AESCipher(object):
 
 
 
-def dump_ciphertext(in_file, key, output_file=None):
-    """Dumps the in_file's name followed by the ciphertext of in_file to the
-    output_file, followed by a single integer
-    indicating the length of the ciphertext.
-    Also returns a tuple of the ciphertext and its length."""
+def dump_ciphertext(in_file, key):
+    """Returns the in_file data, encrypted using the key."""
     cipher = AESCipher(key)
     with open(in_file, 'rb') as f:
         data = f.read()
-    ciphertext = cipher.encrypt((in_file + '::::\n').encode('utf-8') + data)
-
-    if output_file != None:
-        with open(out_file, 'wb') as f:
-            f.write(ciphertext + b'\n')
-
-    return ciphertext
+    return cipher.encrypt((in_file + '::::\n').encode('utf-8') + data)
 
 
 def dump_multiple(key, files, output_file=None):
+    """Dump the ciphertext for each file in files to the output_file."""
     cipher = AESCipher(key)
 
     full_data = b''
@@ -89,6 +73,7 @@ def dump_multiple(key, files, output_file=None):
 
 
 def restore_files(key, mumbofile):
+    """Restore the orgiginal files from the compressed archive."""
     cipher = AESCipher(key)
 
     with open(mumbofile, 'r') as f:
