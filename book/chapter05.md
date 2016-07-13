@@ -29,6 +29,16 @@ You won't be making any exotic applications with complicated, custom widgets wit
 
 ```python
 # Example 5-1 (gui0.pyw)
+# A simple 'Hello World' GUI
+import tkinter as tk
+
+root = tk.Tk()
+root.title('Simple GUI')
+
+my_label = tk.Label(root, text='Hello World!')
+my_label.pack()
+
+root.mainloop()
 ```
 
 ---
