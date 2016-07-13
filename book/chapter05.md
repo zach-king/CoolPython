@@ -31,8 +31,6 @@ You won't be making any exotic applications with complicated, custom widgets wit
 # Example 5-1 (gui0.pyw)
 ```
 
-
-
 ---
 
 ## Wrap Up:
