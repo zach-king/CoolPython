@@ -1,7 +1,8 @@
 # To-Do List:
 
 * \[ \] Compatibilize source code \(make compatible\)
-  * \[ \] .\/source\/xkcd.py
+  * \[ \] .\/source\/...xkcd.py
+  * \[ \] .\/source\/...cryptopress.py
 
 
 * \[ \] Compile\/Collect other necessary example
@@ -39,5 +40,3 @@
   * \[ \] Chapter 08
   * \[ \] Chapter 09
   * \[ \] Chapter 10
-
-
