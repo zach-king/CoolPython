@@ -72,11 +72,11 @@ def dump_multiple(key, files, output_file=None):
     return full_data
 
 
-def restore_files(key, mumbofile):
+def restore_files(key, archive_file):
     """Restore the orgiginal files from the compressed archive."""
     cipher = AESCipher(key)
 
-    with open(mumbofile, 'r') as f:
+    with open(archive_file, 'r') as f:
         lines = f.readlines()
 
     for ciphertext in lines:
@@ -89,9 +89,9 @@ def restore_files(key, mumbofile):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('-f', '--file', help='One or more files for input to mumbojumbo', nargs='+')
-    parser.add_argument('-o', '--output', help='An output file to write ciphertext to')
-    parser.add_argument('-r', '--restore', help='Restore original file(s) from the given file')
+    parser.add_argument('-f', '--file', help='One or more files for input to cryptopress', nargs='+')
+    parser.add_argument('-o', '--output', help='An archive file to output ciphertext to')
+    parser.add_argument('-r', '--restore', help='Restore original file(s) from the given archive file')
     parser.add_argument('-d', '--delete', action='store_true', help='Delete original file(s) after writing to an output file')
     parser.add_argument('key', help='The key to be used')
     args = parser.parse_args()
