@@ -1,4 +1,4 @@
-# Example 5-1 (gui0.py)
+# Example 5-1 (gui0.pyw)
 # A simple 'Hello World' GUI
 
 import tkinter as tk
