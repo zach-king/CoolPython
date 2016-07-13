@@ -59,11 +59,10 @@ def dump_ciphertext(in_file, key):
 
 def dump_multiple(key, files, output_file=None):
     """Dump the ciphertext for each file in files to the output_file."""
-    cipher = AESCipher(key)
-
     full_data = b''
-    for arg in files:
-        full_data += dump_ciphertext(arg, key) + b'\n'
+    for f in files:
+        ciphertext = dump_ciphertext(f, key)
+        full_data += ciphertext + b'\n'
 
     if output_file != None:
         with open(output_file, 'wb') as f:
@@ -74,12 +73,11 @@ def dump_multiple(key, files, output_file=None):
 
 def restore_files(key, archive_file):
     """Restore the orgiginal files from the compressed archive."""
-    cipher = AESCipher(key)
-
     with open(archive_file, 'r') as f:
         lines = f.readlines()
 
     for ciphertext in lines:
+        cipher = AESCipher(key)
         decrypted = cipher.decrypt(ciphertext)
         fname, data = decrypted.decode('utf-8').split('::::\n')
         with open(fname, 'wb') as f:
