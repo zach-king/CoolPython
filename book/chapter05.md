@@ -41,6 +41,29 @@ my_label.pack()
 root.mainloop()
 ```
 
+First we import tkinter; please note that if you are using Python 2 you should `import Tkinter as tk` (capitalize the T). The `as tk` part just pakes it more convenient to type each time we use a tkinter class (such as *Label*); and it's usually not a good idea to `import * from tkinter`.
+
+The first real step is to create the root application frame, which is the *Tk* class.
+
+`root = tk.Tk()`
+
+Then, for aesthetics, we can set the title to be shown in the title bar of the application:
+
+`root.title('Simple GUI')`
+
+I know I implied we would create a blank window, but one widget won't hurt will it? The next line creates a *Label* which is just a placeholder for text. You typically find labels next to input fields or as static messages to the user.
+
+`my_label = tk.Label(root, text='Hello World!')`
+
+Just creating this instance won't cut it for tkinter though. In order to display the widget you must use one of tkinter's *geometry managers* (GM). There are two good GMs that tkinter offers: *pack* and *grid*. Pack will place widgets relative to each other and can be a bit more challenging for beginners to learn, which is why the rest of the examples will use grid. If you just call *pack()* on each widget you create, they will display in a single column, stacked in the order you packed them. Grid, on the other hand, works like a table; you can specify which column and row to place the widget, as well as how many columns and rows the widget should span.
+
+`my_label.pack()`
+
+The last step in creating our glorious GUI is to start the application loop. This is an infinite loop for the application to be used.
+
+`root.mainloop()`
+
+
 ---
 
 ## Wrap Up:
