@@ -122,7 +122,7 @@ Now let's "decipher" the meaning of this code. After importing the appropriate s
 
 The constructor of this class takes a few arguments. The first is the key as a string, and the other two are special. _AES.MODE\_CBC_ tells the cipher object to use the Cipher Block Chaining mode; block ciphers use modes such as these. If you read about CBC, you will see that "\[I\]n CBC, each block of plaintext is XORed with the previous ciphertext block before being encrypted" \([source](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_Block_Chaining_.28CBC.29)\). The last argument is a string, known as the IV. IV stands for initialization vector. The IV should be random, or pseudorandom, and its usage for block ciphers depends on the mode. In our case, using CBC mode, the IV modifies how the first block is encrypted\/decrypted; furthermore, a one-bit change of the IV will result in different results. The following image, obtained from the [wiki page for block ciphers](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_Block_Chaining_.28CBC.29), depicts the process for encryption using CBC.
 
-![CBC mode encryption](https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/CBC_encryption.svg/601px-CBC_encryption.svg.png)
+![CBC mode encryption](./images/CBC_encryption.png)
 
 Next, we store our message as a string, and pass it to the _encrypt\(\)_ method in the cipher object instance. The result of this is a string of bytes, which we store in the _ciphertext_ variable. The code up to this point can be thought of as the "sender" code, and the code afterwards as the "receiver."
 
@@ -133,7 +133,7 @@ The next step is integrating this with a useful application. So let's write a fi
 * get a file path from the user, for the plaintext input
 * get a file path from the user, for the ciphertext output
 * get the key from the user
-* use optional command-line arguments 
+* use optional command-line arguments
 
 After laying out these requirements, I wrote the following application:
 
@@ -265,4 +265,3 @@ Okay cyber ninjas, now you can wield the power of cryptography in your own proje
 Things to remember from this chapter are the two types of cryptography algorithms: symmetric and asymmetric, which translates to using one key or two keys, respectively. Also remember there are two types of ciphers: block and stream ciphers, which accept data in different forms \(chunks or symbol-by-symbol\).
 
 [Prev: Chapter 2 - Sending Email](./chapter02.md) \| [Next: Chapter 4 - Web Scraping](./chapter04.md)
-
